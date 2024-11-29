@@ -8,8 +8,6 @@ ENV NPM_CONFIG_PROGRESS=true
 
 RUN npm install --verbose
 
-RUN npm install bcryptjs
-
 COPY . .
 
 EXPOSE 8080

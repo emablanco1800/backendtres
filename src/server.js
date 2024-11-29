@@ -5,7 +5,6 @@ import { dotenvConfig, connectDB } from "./config/index.js";
 import { passportConfig } from "./config/index.js";
 import swaggerUiExpress from "swagger-ui-express";
 import { specs } from "./config/swagger.config.js";
-
 import UserMockRouter from "./routers/api/userMock.router.js";
 import PetMockRouter from "./routers/api/petMock.router.js";
 import PetRouter from "./routers/api/pet.router.js";
@@ -44,4 +43,3 @@ server.use("*", (req, res) => {
 server.listen(process.env.PORT ? process.env.PORT : 8080, () => {
     console.log(`Ejecutándose en http://localhost:${process.env.PORT}`);
 });
-

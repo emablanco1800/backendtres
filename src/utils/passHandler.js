@@ -1,4 +1,6 @@
-import bcrypt from "bcrypt";
+import bcryptjs from "bcryptjs";
+
+const bcrypt = bcryptjs
 
 export const hasher = (password) => {
     const pwd = String(password)
